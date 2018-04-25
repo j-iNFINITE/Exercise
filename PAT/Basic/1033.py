@@ -2,8 +2,7 @@
 miss= input()
 raw=input()
 if '+' in miss:
-    bigraw=raw.upper()
-    raw=''.join([e for e in raw if e not in bigraw])
+    raw=''.join([e for e in raw if e not in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'])
     miss=miss.replace('+','')
 for e in miss:
     e=e.upper()
