@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
-n = input()
+from math import sqrt
+n = int(input())
+
 
 print()

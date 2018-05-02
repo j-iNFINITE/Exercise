@@ -9,13 +9,12 @@ if len(A)<len(B):
     extra=B[len(A):]
     extra.reverse()
 flag=1
-for e in zip(A,B):
-    a,b=[int(i) for i in e]
+for e in range(min(len(A),len(B))):
     if flag%2==0:
-        b=b-a
+        b=int(B[e])-int(A[e])
         if b<0:b=b+10
     else:
-        b=cstring[int((a+b))%13]
+        b=cstring[(int(B[e])+int(A[e]))%13]
     Ciphertext.append(b)
     flag+=1
 Ciphertext.reverse()
