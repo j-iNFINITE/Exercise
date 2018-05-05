@@ -7,7 +7,7 @@ def jh(ans,reverse=False):
     if ans.find('-')>-1:flag=1
     ans=ans.replace('-','')
     z,m=[int(e) for e in ans.split('/')]
-    for i in range(min(z,m),0,-1):  #找最大公约数导致超时？
+    for i in range(min(z,m),1,-1):  #找最大公约数导致超时？
         if z%i==0 and m%i==0:
             z=z//i
             m=m//i
