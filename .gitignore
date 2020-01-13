@@ -174,3 +174,4 @@ venv.bak/
 [Ss]cripts
 pyvenv.cfg
 pip-selfcheck.json
+.vscode/*
